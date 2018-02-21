@@ -2,36 +2,37 @@
 @font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };	
 .body{
 	
-	height:700px;
+	height:auto;
 	width:auto;
 	margin:0 auto;
 }
 .left{
 	height:100vh;
-	background-image:url("images/nature2.jpg");
+	background-image:url("images/anish.png");
 	background-size:cover;
-	
+	background-position:center;
 }
 .right{
 	position:relative;
 	background-image:url("wall-bg.jpg");
 	background-size:contain;
-	background-repeat:no-repeat;
 	 background-position:bottom;
+	background-repeat:no-repeat;
 	height:100vh;
 }
 .text{
-	font-family:'railway','roboto';
+	color:white;
+	font-family:'railway',Regular;
 	position:absolute;
 	top:19%;
-	left:32%;
-	right:32%;
+	left:22%;
+	right:22%;
 	text-align:justify;
 }
 
 	
 .signature{
-	
+	color:blue;
 	font-family:alex_brushregular;
 	right:15%;
 	text-align:right;
@@ -57,12 +58,12 @@
 }
 
 @media(max-width:768px)
-{
-	body{
-		height:500px !important;
+{	.left .right{
+		height:auto;
 	}
-	
-	
+	.right{
+		background-size:100%;
+	}
 	.text{
 		text-align:justify;
 		
@@ -70,9 +71,9 @@
 		h4{
 			font-size:10px !important;
 		}
-		h3{
+		/*h3{
 			font-size:18px !important;
-		}
+		}*/
 		.btn{
 			height:auto;
 			padding:5px;
@@ -83,29 +84,31 @@
 		}
 }
 @media(max-width:992px){
+		
 		.left{
-		background-size:contain;
-		background-position:center;
+		background-position:top;
+	}
+	.left, .right{
+		height:60vh;
+	}
+	.text{
+		top:3%;
 	}
 		h4{
 			font-size:11px !important;
 		}
-		h3{
+		/*h3{
 			font-size:18px !important;
-		}
+		}*/
 }
 @media(max-width:400px){
-		body{
-			height:300px;
-		}
+
 		h4{
-			font-size:8px !important;
-		}
-		h3{
-			font-size:12px !important;
+			font-size:10px !important;
 		}
 		.btn{
 			padding:3px;
 			width:auto;
 		}
+		
 }
