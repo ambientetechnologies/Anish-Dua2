@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };	
+.body{
+	
+	height:700px;
+	width:auto;
+	margin:0 auto;
+}
+.left{
+	height:100vh;
+	background-image:url("images/nature2.jpg");
+	background-size:cover;
+	
+}
+.right{
+	position:relative;
+	background-image:url("wall-bg.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	 background-position:bottom;
+	height:100vh;
+}
+.text{
+	font-family:'railway','roboto';
+	position:absolute;
+	top:19%;
+	left:32%;
+	right:32%;
+	text-align:justify;
+}
+
+	
+.signature{
+	
+	font-family:alex_brushregular;
+	right:15%;
+	text-align:right;
+}
+.btn {
+	border:1px solid #54a0e7;
+	padding:10px;
+	margin-top:7%;
+	height:auto;
+	width:auto;
+	background-color:#54a0e7;
+	bottom :35%;
+	right:5% ;
+}
+.btn a{
+	color:white;
+	text-decoration:none;
+	}
+	
+.btn:hover{
+	background-color:#14458b;
+	
+}
+
+@media(max-width:768px)
+{
+	body{
+		height:500px !important;
+	}
+	
+	
+	.text{
+		text-align:justify;
+		
+	}
+		h4{
+			font-size:10px !important;
+		}
+		h3{
+			font-size:18px !important;
+		}
+		.btn{
+			height:auto;
+			padding:5px;
+			width:auto;
+		}
+		.btn a{
+			font-size:8px !important;
+		}
+}
+@media(max-width:992px){
+		.left{
+		background-size:contain;
+		background-position:center;
+	}
+		h4{
+			font-size:11px !important;
+		}
+		h3{
+			font-size:18px !important;
+		}
+}
+@media(max-width:400px){
+		h4{
+			font-size:8px !important;
+		}
+		h3{
+			font-size:12px !important;
+		}
+		.btn{
+			padding:3px;
+			width:auto;
+		}
+}
