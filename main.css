@@ -82,9 +82,7 @@
 		.btn a{
 			font-size:8px !important;
 		}
-		.text{
-		top:3%;
-	}
+	
 }
 @media(max-width:992px){
 		
@@ -111,5 +109,8 @@
 			padding:3px;
 			width:auto;
 		}
+		.text{
+		top:3%;
+	}
 		
 }
