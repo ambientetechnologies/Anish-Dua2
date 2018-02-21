@@ -8,9 +8,10 @@
 }
 .left{
 	height:100vh;
+	
 	background-image:url("images/anish.png");
 	background-size:cover;
-	background-position:center;
+	background-position:left;
 }
 .right{
 	position:relative;
@@ -43,7 +44,9 @@
 	margin-top:7%;
 	height:auto;
 	width:auto;
-	background-color:#54a0e7;
+	background-color:#6087FF;
+	border:2px solid #6087FF;
+	border-radius:50%;
 	bottom :35%;
 	right:5% ;
 }
@@ -88,9 +91,6 @@
 		
 		.left{
 		background-position:top;
-	}
-	.left, .right{
-		height:80vh;
 	}
 	
 		h4{
