@@ -1,19 +1,34 @@
 @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
-@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };	
+@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };
 
 .body{
-	
+
 	height:auto;
 	width:auto;
 	margin:0 auto;
+
+}
+#transparent{
+	color:white;
+	position: absolute;
+	top:35%;
+	left:40%;
+	text-align: center;
+	height:150px;
+	width:300px;
+	background-color: rgba(0,0,0,0.3);
+}
+#intro.btn{
+	padding:15px !important;
 }
 .left{
+	position: relative;
 	height:100vh;
-	
-	background-image:url("images/anish.png");
-	background-size:cover;
-	background-position:left;
+	background-image:url("images/anish2.jpg");
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: top;
 }
 .right{
 	position:relative;
@@ -22,7 +37,9 @@
 	 background-position:bottom;
 	background-repeat:no-repeat;
 	height:100vh;
+	display: none;
 }
+
 .text{
 	color:#6087FF;
 	font-family: 'Archivo Narrow', sans-serif;
@@ -33,7 +50,7 @@
 	text-align:justify;
 }
 
-	
+
 .signature{
 	color:blue;
 	font-family:alex_brushregular;
@@ -41,7 +58,7 @@
 	text-align:right;
 }
 .btn {
-	border:1px solid #54a0e7;
+	color:white;
 	padding:10px;
 	margin-top:7%;
 	height:auto;
@@ -55,24 +72,29 @@
 	color:white;
 	text-decoration:none;
 	}
-	
+
 .btn:hover{
 	background-color:#14458b;
-	
+	border: 2px solid #14458b;
+	color:white;
+
 }
 
 @media(max-width:768px)
 {	.left .right{
-		height:auto;
-		width:100%;
+
+		width:100% !important;
 	}
+	.left{
+			height:100vh;
+		}
 	.right{
 		background-size:100%;
 	}
 	.text{
 		text-align:justify;
-		
-	}	
+
+	}
 
 		h4{
 			font-size:10px !important;
@@ -88,24 +110,28 @@
 		.btn a{
 			font-size:8px !important;
 		}
-	
+
 }
 @media(max-width:992px){
-		
+
 		.left{
-		background-position:top;
+		background-position:left;
 	}
 	.text{
-		
+
 	}
 		h4{
 			font-size:14px !important;
 		}
 }
-@media(max-width:400px){
+@media(max-width:480px){
 		.btn{
 			padding:3px;
 			width:auto;
 		}
-				
+		.left{
+
+			height:80vh;
+		}
+
 }
