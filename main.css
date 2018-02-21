@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
 @font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };	
+
 .body{
 	
 	height:auto;
@@ -22,8 +24,8 @@
 	height:100vh;
 }
 .text{
-	color:white;
-	font-family:'railway',Regular;
+	color:#6087FF;
+	font-family: 'Archivo Narrow', sans-serif;
 	position:absolute;
 	top:15%;
 	left:22%;
@@ -46,7 +48,6 @@
 	width:auto;
 	background-color:#6087FF;
 	border:2px solid #6087FF;
-	border-radius:50%;
 	bottom :35%;
 	right:5% ;
 }
@@ -63,6 +64,7 @@
 @media(max-width:768px)
 {	.left .right{
 		height:auto;
+		width:100%;
 	}
 	.right{
 		background-size:100%;
@@ -70,7 +72,8 @@
 	.text{
 		text-align:justify;
 		
-	}
+	}	
+
 		h4{
 			font-size:10px !important;
 		}
@@ -92,19 +95,14 @@
 		.left{
 		background-position:top;
 	}
-	
+	.text{
+		
+	}
 		h4{
-			font-size:11px !important;
+			font-size:14px !important;
 		}
-		/*h3{
-			font-size:18px !important;
-		}*/
 }
 @media(max-width:400px){
-
-		h4{
-			font-size:10px !important;
-		}
 		.btn{
 			padding:3px;
 			width:auto;
