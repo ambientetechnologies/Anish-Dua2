@@ -26,7 +26,7 @@
 	position: relative;
 	height:100vh;
 	background-image:url("images/anish2.jpg");
-	background-size:contain;
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: top;
 }
@@ -37,7 +37,7 @@
 	 background-position:bottom;
 	background-repeat:no-repeat;
 	height:100vh;
-	display: none;
+
 }
 
 .text{
@@ -81,11 +81,12 @@
 }
 
 @media(max-width:768px)
-{	.left .right{
+{.left .right{
 
 		width:100% !important;
-	}
-	.left{
+	 }
+	 .left{
+		  background-size: contain;
 			height:100vh;
 		}
 	.right{
@@ -114,9 +115,9 @@
 }
 @media(max-width:992px){
 
-		.left{
+		/* .left{
 		background-position:left;
-	}
+	} */
 	.text{
 
 	}
