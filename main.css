@@ -34,14 +34,14 @@
 	position:relative;
 	background-image:url("wall-bg.jpg");
 	background-size:contain;
-	 background-position:bottom;
+	background-position:bottom;
 	background-repeat:no-repeat;
 	height:100vh;
 
 }
 
 .text{
-	color:#6087FF;
+	/* color:#6087FF; */
 	font-family: 'Archivo Narrow', sans-serif;
 	position:absolute;
 	top:15%;
@@ -52,10 +52,14 @@
 
 
 .signature{
-	color:blue;
+	/* color:blue; */
 	font-family:alex_brushregular;
 	right:15%;
 	text-align:right;
+}
+.signature h1{
+	font-size: 42px;
+
 }
 .btn {
 	color:white;
