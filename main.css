@@ -3,6 +3,7 @@
 @font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; }
 
 .wrapper{
+	box-sizing: border-box;
 	background-image: url("images/anish2.jpg") !important;
 	background-size:cover;
 	height:100vh;
@@ -111,9 +112,9 @@
 			font-size: 14px;
 		}
 		.right{
-
 			margin-top: 45%;
 			height: auto;
+			max-height: 60vh;
 			/* margin-top: 40%; */
 		}
 		#text{
