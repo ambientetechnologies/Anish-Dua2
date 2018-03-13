@@ -91,6 +91,9 @@
 	.signature{
 		font-size: 26px;
 	}
+	.right{
+		height: auto;
+	}
 
 }
 
