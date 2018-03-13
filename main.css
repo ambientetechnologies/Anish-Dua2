@@ -3,51 +3,59 @@
 @font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; }
 
 .wrapper{
-	/* background-image: url("images/gradient.jpg") !important; */
-	background: #606c88;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url("images/Anish2.jpg") !important;
+	background-size:cover;
+	height:100vh;
 
 }
 
+.right{
+	margin-top: 10%;
+	margin-left: 10%;
+	background-color: rgba(17,18,22,0.5);
+	height:75vh;
+}
 .left{
 	/* position: relative; */
 	/* border: 1px solid; */
-	height:100vh;
-	/* background-image:url("images/anish2.jpg"); */
 }
-.right{
-	/* position: relative; */
-	/* border: 1px solid; */
-	height:100vh;
+.mobile{
+	display: none;
 }
-
-.text{
+.textbox{
 	/* color:#6087FF; */
-	color: white;
 	/* line-height: 30px; */
-	font-family: 'Archivo Narrow', sans-serif;
 	margin-top:25%;
 	/* left:2%;
 	right:2%; */
+}
+.text{
+	font-family: 'Archivo Narrow', sans-serif;
 	text-align:justify;
+	font-size: 20px;
+	color: white;
+
 }
 
-.right img{
+/* .right img{
 	margin-top:14%;
 	float: right;
 	border: 8px solid;
-}
+} */
 
 .signature{
+	font-size: 35px;
+	height: auto;
+	display: flex;
 	color:white;
 	font-family:alex_brushregular;
+	width: auto;
 
 }
-.signature h1{
-	font-size: 52px;
+ .signature p
+ {
 
-}
+ }
 .col-md-1{
 	margin: 5%;
 
@@ -74,59 +82,40 @@ background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, F
 
 }
 
-@media(max-width:768px)
-{.left .right{
+@media(max-width:768px){
+	.text{
+		font-size:12px;
 
-		width:100% !important;
-	 }
-	 /* .left{
-		  background-size: contain;
-			height:100vh;
-		} */
-	/* .right{
-		background-size:100%;
-	} */
-	/* .text{
-		text-align:justify;
-
-	} */
-
-		h3{
-			font-size:10px !important;
-		}
-		/*h3{
-			font-size:18px !important;
-		}*/
-		.btn{
-			height:auto;
-			padding:5px;
-			width:auto;
-		}
-		.btn a{
-			font-size:8px !important;
-		}
+	}
+	.signature{
+		font-size: 26px;
+	}
 
 }
+
+
 @media(max-width:992px){
 
 		/* .left{
 		background-position:left;
 	} */
 	.text{
+		font-size: 14px;
 
 	}
-		h4{
-			font-size:14px !important;
-		}
+
 }
 @media(max-width:480px){
-		.btn{
-			padding:3px;
-			width:auto;
-		}
-		.left{
 
-			height:80vh;
+		.text{
+			font-size: 10px;
 		}
+		.right{
 
+			margin-top: 500px;
+			height: 100vh;
+			/* margin-top: 40%; */
+		}
+		#text{
+		}
 }
