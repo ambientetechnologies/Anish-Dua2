@@ -1,76 +1,66 @@
 @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
 @import url('https://fonts.googleapis.com/css?family=Archivo+Narrow');
-@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; };
+@font-face { font-family: 'alex_brushregular'; src: url('fonts/alexbrush-regular-webfont.woff2') format('woff2'), url('fonts/alexbrush-regular-webfont.woff') format('woff'); url('fonts/AlexBrush-Regular.ttf') format('truetype'); font-weight:normal; font-style: normal; }
 
-.body{
-
-	height:auto;
-	width:auto;
-	margin:0 auto;
+.wrapper{
+	/* background-image: url("images/gradient.jpg") !important; */
+	background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-#transparent{
-	color:white;
-	position: absolute;
-	top:35%;
-	left:40%;
-	text-align: center;
-	height:150px;
-	width:300px;
-	background-color: rgba(0,0,0,0.3);
-}
-#intro.btn{
-	padding:15px !important;
-}
+
 .left{
-	position: relative;
+	/* position: relative; */
+	/* border: 1px solid; */
 	height:100vh;
-	background-image:url("images/anish2.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
-	background-position: top;
+	/* background-image:url("images/anish2.jpg"); */
 }
 .right{
-	position:relative;
-	background-image:url("wall-bg.jpg");
-	background-size:contain;
-	background-position:bottom;
-	background-repeat:no-repeat;
+	/* position: relative; */
+	/* border: 1px solid; */
 	height:100vh;
-
 }
 
 .text{
 	/* color:#6087FF; */
+	color: white;
+	/* line-height: 30px; */
 	font-family: 'Archivo Narrow', sans-serif;
-	position:absolute;
-	top:15%;
-	left:22%;
-	right:22%;
+	margin-top:25%;
+	/* left:2%;
+	right:2%; */
 	text-align:justify;
 }
 
+.right img{
+	margin-top:14%;
+	float: right;
+	border: 8px solid;
+}
 
 .signature{
-	/* color:blue; */
+	color:white;
 	font-family:alex_brushregular;
-	right:15%;
-	text-align:right;
+
 }
 .signature h1{
-	font-size: 42px;
+	font-size: 52px;
+
+}
+.col-md-1{
+	margin: 5%;
+
 
 }
 .btn {
 	color:white;
 	padding:10px;
-	margin-top:7%;
 	height:auto;
-	width:auto;
-	background-color:#6087FF;
+	width:200px;
+	background-color:transparent;
 	border:2px solid #6087FF;
-	bottom :35%;
-	right:5% ;
+	border-radius: 50px;
 }
 .btn a{
 	color:white;
@@ -78,7 +68,7 @@
 	}
 
 .btn:hover{
-	background-color:#14458b;
+	background-color:#6087FF;
 	border: 2px solid #14458b;
 	color:white;
 
@@ -89,19 +79,19 @@
 
 		width:100% !important;
 	 }
-	 .left{
+	 /* .left{
 		  background-size: contain;
 			height:100vh;
-		}
-	.right{
+		} */
+	/* .right{
 		background-size:100%;
-	}
-	.text{
+	} */
+	/* .text{
 		text-align:justify;
 
-	}
+	} */
 
-		h4{
+		h3{
 			font-size:10px !important;
 		}
 		/*h3{
