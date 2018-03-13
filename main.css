@@ -108,12 +108,12 @@
 @media(max-width:480px){
 
 		.text{
-			font-size: 10px;
+			font-size: 14px;
 		}
 		.right{
 
-			margin-top: 500px;
-			height: 100vh;
+			margin-top: 45%;
+			height: auto;
 			/* margin-top: 40%; */
 		}
 		#text{
